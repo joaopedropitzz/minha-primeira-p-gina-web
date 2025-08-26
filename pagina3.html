@@ -1,41 +1,71 @@
 <!DOCTYPE html>
-<html lang ="en" >
+<html lang="en">
     <head>
-        <meta charset = "UTF-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="pagina3.css">
         <title>CSS</title>
+        <style>
+            dd {
+                color: blue;
+            }
+        </style>
     </head>
     <body>
-        <p>O CSS documento de estilização em cascata criado em 1993, com sua primeira versão amplamente utilizada em 1997. A linguagem CSS permite definir regras que definem características para os elementos HTML como cor, borda e comportamentos, além de animações e transições.</p>
-            <p>Ao longo dos anos o css evoluiu e hoje temos o CSS 1, 2 e 3, cada uma das versões adicionou novos recursos, que eram demandas no período.
-            </p>
-            <ol type="1">
-                <li>CSS 1 1997 - propriedades básicas de estilização e formatação, além de controle do posicionamento dos elementos, html com display, propriedades float e position 
-                </li>
-                <li>CSS 2 1998 - adição de propriedades de animação e transição e melhoria do position</li>
-                <li>CSS 3 2008 - incremento gradual de novas funcionalidades do CSS com animação e ferramentas de posicionamento como display:flex (2008) e grid (2013)</li>
-            </ol>
+
+        <p>O CSS é um documento de estilização em cascata criado em 1993, com
+            sua primeira versão amplamente utilizada em 1996. A linguagem CSS
+            permite definir regras que definem características para os elementos
+            HTML como cor, borda e comportamentos, além de animações e
+            transições.</p>
+        <p>Ao longo dos anos o CSS evoluiu e hoje temos o CSS 1, 2 e 3, cada uma
+            das versões adicionou novos recursos que eram demandados no
+            período.</p>
+        <ol type="1">
+            <li>CSS 1 1996 - propriedades básicas de estilização e formatação,
+                além de controle do posicionamento dos elementos HTML com
+                propriedades float e position.</li>
+            <li>CSS 2 1998 - adição de propriedades de animação e transição, e
+                melhoria do position.</li>
+            <li>CSS 3 2008 - incremento gradual de novas funcionalidades do CSS
+                com animação e ferramentas de posicionamento como display:flex
+                (2008) e grid (2013).</li>
+        </ol>
+        <p class="vermelho">Uma regra CSS pode ser definida com a seguinte sintaxe:</p>
+
         <div>
-            <p class="vermelho">Uma regra css pode ser definida com a seguinte sintaxe</p>
             <pre>
-            Seletor{
-                Propriedade1:Valor;
-                Propriedade2:Valor;
-
-                PropriedadeN:Valor;
-            }
+                Seletor{
+                    Propriedade1:Valor;
+                    Propriedade2:Valor;
+    
+                    PropriedadeN:Valor;
+                }
             </pre>
-            <p id ="tituloformacss">Podemos incluir código CSS de 3 formas diferentes</p>
-            <dl>
-                <dt>CSs externo</dt>
-                <dd>Quando definirmos as regras CSS a serem utilizadas por meio de um arquivo externo .css, vinculando ele ao html por meio da tag &lt; link &gt; no head do documento html</dd>
-                <dt>CSS incorporado "no documento"</dt>
-                <dd>Quando definimos as regras CSS por meio da tag &lt;style &gt;</dd>
-                <dt>CSS inline</dt>
-                <dd>Quando definimos código css de estilização no próprio elemento HTML como: <span style="color:red">Texto de cor vermelha com CSS inline</span></dd>
-            </dl>
+            <p id="tituloformascss">Podemos incluir código CSS de 3 formas diferentes</p>
 
+            <dl>
+                <dt>CSS externo</dt>
+                <dd style="color: orange;">Quando definimos código CSS a serem utilizadas por meio de
+                    um arquivo externo .css, vinculando ele ao HTML por meio da
+                    tag &lt;link&gt; no head do seu arquivo HTML</dd>
+
+                <dt>CSS incorporado "no documento"</dt>
+                <dd>Quando definimos código CSS por meio da tag
+                    &lt;style&gt;</dd>
+
+                <dt>CSS inline</dt>
+                <dd>Quando definimos código CSS de estilização no próprio
+                    elemento HTML como: <span style="color: red;">Texto de cor
+                        vermelha com CSS inline</span></dd>
+            </dl>
         </div>
+
+        <form action="">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <input type="submit" value="Enviar">
+            <input type="text">
+        </form>
     </body>
 </html>

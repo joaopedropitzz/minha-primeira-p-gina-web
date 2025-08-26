@@ -1,13 +1,53 @@
-/**seletor{ propriedade:valor;} **/
+/** Uma regra CSS tem a sintaxe geral
+    seletor{
+        propriedade:valor;
+    }
+    
+    Tipos de Seletor Existentes:
+    - Seletor Universal: Seleciona todos os elementos (ex: *)
+    - Seletor de Tipo: Seleciona todos os elementos de um determinado tipo (ex: p, h1, div)
+    - Seletor de ID: Seleciona um único elemento com u =m determinado ID (ex: #meu-id)
+    - Seletor de Classe: Seleciona todos os elementos com uma determinada classe (ex: .minha-classe)
+    - Seletor por Atributo: Seleciona elementos com um determinado atributo (ex: [type="text"])
+    - Seletor de Pseudo-classe: Seleciona elementos em um estado específico (ex: a
+**/
 
-p{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
     background-color: azure;
 }
-#tituloformacss{
-    background-color: bisque;
 
+#tituloformascss {
+    background-color: bisque;
 }
 
-.vermelho{
+.vermelho {
     color: red;
+}
+body,p,div{
+    background-color: yellowgreen;
+}
+p{
+    color: #945454;
+}
+#descricao-css{
+    font-weight: bold;
+}
+.titulo{
+    font-size: 20pt;
+}
+
+[for="nome"], [type="submit"] {
+    color: magenta;
+}
+button: hover{
+    background-color: magenta;
+    color: white;
+    font-size:40pt;
+
 }
