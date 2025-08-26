@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        #container,.box{border: 1px solid red;}
+        .box{display: inline-block;width: 50px;height:50px;}
+        #container{
+            position: relative;
+            margin-top:200px;
+        }   
+        #item1{position: relative; top: 10px;left:10px;}
+        #item2{
+            position: absolute;
+            left:10px;  
+            top: 100px;
+        }
+        #item3{
+            position: fixed;
+            left: 50%;
+            top: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="item1">1</div>
+        <div class="box" id="item2">2</div>
+        <div class="box" id="item3">3</div>
+        <div class="box" id="item4">4</div>
+        <div class="box" id="item5">5</div>
+    </div>
+    
+</body>
+</html>
