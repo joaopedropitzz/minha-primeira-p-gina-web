@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    html,body{ margin: 0px; padding: 0px;}
+        .box{
+            display: inline-block;
+            height: 20vw ;
+            width: 20vw ;
+            border: 1px solid black;
+        }
+        #item1{ background-color: blue;}
+        #item1{
+            position: fixed;left 0px;
+
+            animation: gira 5s none 0s infinite;
+        }
+        .container{
+
+        }
+        @keyframes gira{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            
+
+            
+            25%{
+                left: 1550px;
+                top: 0px;
+                transform: rotate(360deg);
+                background-color: red;
+
+
+            }
+            50%{
+                top: 550px;
+                left: 1550px;
+                transform: rotate(360deg);
+                background-color: magenta;
+
+            }
+            75%{
+                top: 550px;
+                left: 0px;
+                tranform: rotate(80deg);
+                background-color: green;
+
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+                transform: rotate(60deg);
+                background-color: yellow;
+
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="item1">1</div>
+    </div>
+    
+    
+</body>
+</html>
